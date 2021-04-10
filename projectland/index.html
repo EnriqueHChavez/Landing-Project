@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+<head>
+  <title>Landing Page Project</title>
+
+</head>
+
+<body>
+  <div id="top-box">
+    <h1> Join our community </h1> <br>
+    <h2 id="day">Lorem ipsum dolor sit amet. </h2>
+    <p class="introPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit lectus ligula. </p>
+    <p class="introPar2"> Duis lectus ligula, lobortis non semper ac, porta eu neque ipsum dolor sit amet. </p>
+  </div>
+  <div class="row">
+    <div class="column" id="left">
+      <h2 class="padding">Monthly Subscription</h2>
+      <p class="padding"> <span class="twentyNine">29$</span> <span class="perMonth"> per month</span> </p>
+      <p class="padding">Full Acess for less than $1 a day.</p>
+      <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="column" id="right">
+      <h2>Why Us</h2>
+      <p class="whyUsInfo">Ipsum dolor sit amet</p>
+      <p class="whyUsInfo"> Suspendisse metus sapien</p>
+      <p class="whyUsInfo">Euismod ut venenatis vel</p>
+      <p class="whyUsInfo">Ipsum dolor sit amet</p>
+      <p class="whyUsInfo">Suspendisse metus sapien</p>
+      <p class="whyUsInfo">Euismod ut venenatis vel</p>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer></footer>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+
+</html>
